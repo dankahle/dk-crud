@@ -1,27 +1,14 @@
-# NgVanilla
+# dk-crud
+this project is a POC to see the differences between rest and graphql and if both can share the same code on some level.  
+  
+It contains 3 branches:
+rest - plain rest api and UI  
+graphql - graphql api and UI  
+restql - shared repo version rest api and UI  
+  
+So it's a test to see how much different graphql is from vanilla rest, but also if code can be shared in a dual graphql/rest api scenario.
+  
+Turns out with some minor tweaks you can share the repo between the two. This appears to be the way you want to go here, as most of the code would be duplicated if separate repos.
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.6.4.
 
-## Development server
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
-
-## Code scaffolding
-
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
-
-## Build
-
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `-prod` flag for a production build.
-
-## Running unit tests
-
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
