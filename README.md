@@ -1,27 +1,2 @@
-# NgVanilla
-
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.6.4.
-
-## Development server
-
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
-
-## Code scaffolding
-
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
-
-## Build
-
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `-prod` flag for a production build.
-
-## Running unit tests
-
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+### dk-crud - restql branch
+this branch simply morphs the rest api to issue the same parameters to the repository as graphql does in graphql branch in an effort to show how a rest api and graphql endpoint could share the same repo. Not much work there, just passing an object with parameters (how graphql does it) instead of just the parameters. graphql branch does the same and can be tested via postman, this branch simply verifies the UI works with it as well.
