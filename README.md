@@ -1,20 +1,18 @@
 # dk-crud
-this project is a POC to see the differences between rest and graphql and if both can share the same code on some level.  
+This project is a POC to see the differences between rest and graphql and if both can share the same code on some level.  
   
-It contains 3 branches:
-rest - plain rest api and UI  
-graphql - graphql api and UI  
-restql - shared repo version rest api and UI  
+It contains 3 branches:  
+**rest** - plain rest api and UI  
+**graphql** - graphql api and UI  
+**restql** - rest api implemented in the graphql branch's shared repository form with a working UI hitting the rest api  
   
-So it's a test to see how much different graphql is from vanilla rest, but also if code can be shared in a dual graphql/rest api scenario.
-  
-Turns out with some minor tweaks you can share the repo between the two. This appears to be the way you want to go here, as most of the code would be duplicated if separate repos.
+Each branche's readme has info pertaining to that branch. rest branch was straight forward, restql same thing, but with objects passed to repo instead of individual parameters. graphql branch was the real challenge, implementing the backend in graphql.js and the front in apollo. The apollo cache was a challenge too, and required some tweaking to make the user list never call back to the api as all was handled in the client cache.
 
 ### setup
-1. switch to graphql branch
+1. switch to graphql branch (has all the packages)
 2. npm install
 3. run seed.bat at site root (to reset the mongodb local mongodb database with dkcrud database)
-4. node rest-api/rest-server.js // start api server
+4. node rest-api/rest-server.js (node server/server.js in graphql) to start server on 3005
 5. ng serve // for angular/cli ui on 4200
 
 
