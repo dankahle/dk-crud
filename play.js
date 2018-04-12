@@ -1,4 +1,6 @@
-const _ = require('lodash');
+// require('babel-register');
+// require("babel-polyfill");
+// import {map} from 'lodash';
 
 /*
 const patients = [
@@ -16,8 +18,5 @@ const arr = [
   {name: 'Omar', roomNumber: 3, bedNumber: 1}
 ];
 
-
-console.log(arr);
-console.log()
-console.log(_.sortBy(_.sortBy(arr, 'roomNumber'), 'bedNumber'))
-
+// console.log(map(arr, x => x.name));
+console.log(...arr);
